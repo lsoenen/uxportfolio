@@ -4,9 +4,10 @@
 
   <head>
     <meta name="description" content="Luke Soenen UX Design Portfolio" />
-    <title> Project 3 </title>
+    <title> Luke Soenen </title>
 
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../Images/avatar.ico">
 
   </head>
 
@@ -16,15 +17,123 @@
       <ul>
         <li> <a href="../reading.html"> Reading </a> </li>
         <li> <a href="../about.html"> About </a> </li>
-        <li> <a href="../index.html" class="active"> Home </a> </li>
+        <li> <a href="../index.html" class="active"> Projects </a> </li>
       </ul>
     </div>
 
-    <a class="back" href="../index.html"> Back to projects </a>
+    <p> <a class="backbutton" href="../index.html"> Back to projects </a> </p>
 
     <h1> Submit X </h1>
 
+    <h3> Background </h3>
+
+    <p>  Using SAP Fieldglass, staffing companies can submit workers to job postings. When submitting candidates, they can "Submit New" candidates or "Submit Existing" candidates. </p>
+
+    <p>  In the system each worker has their own unique workforce record. This record is what gets submitted when a supplier chooses to "Submit Existing." When the supplier chooses to "Submit New" they are creating a new workforce record in the system. </p>
+
+    <h3> Problem </h3>
+
+    <p>  A large number of duplicate workforce records were found in the system. This meant that for some reason suppliers were not using the "Submit Existing" option. </p>
+
+    <img src="../Images/submitx/jp.png">
+
+
+
+    <h3> Scenarios & Flow Chart </h3>
+
+    <p> To gain a better understanding of the process of submitting a job seeker to a job posting I mapped out potential scenarios and the flow. This helped me understand why a supplier arrives at the page and also the steps and decisions they make throughout the submission process. </p>
+
+    <img src="../Images/submitx/scenarios.png"/>
+
+    <img src="../Images/submitx/flow-chart.png"/>
+
+
+    <h3> Asking the Right Questions </h3>
+
+    <p> With a more clear picture of how the submission process worked, it was still unclear as to why suppliers were not using the "Submit Existing" button. To me, the two options and their purpose seemed very clear, but I am not the user. So to try and put myself into their shoes, I started formulating a list of questions that would help provide insight and identify the underlying issue.   </p>
+
+    <p> One strategy I find helpful when it comes to formulating good questions and putting together a story is the <a href="https://comm.gatech.edu/resources/writers/5ws"> Five W's Method </a> (I also like to include how). </p>
+
+    <h4> Initial Questions: </h4>
+
+    <ul class="project-two">
+      <li> What is the total number of duplicate workforce records created in the system? </li>
+      <li> What percent of all job seeker submissions used "Submit Existing?"</li>
+      <li> What percent of suppliers understand the difference between "Submit New" and "Submit Existing?" </li>
+    </ul>
+
+    <p> For a list of all my questions: <a href="../Images/submitx/one-pager.docx"> Download One Pager </a>
+
+
+    <h3> Quantitative Data </h3>
+
+    <p> In order to find answers to the questions, I reached out to the Database Mining Team (DBM). </p>
+
+    <h4> 1. "What percent of all job seeker submissions used "Submit Existing?" </h4>
+
+
+
+    <!-- <ul class="data">
+      <li> Total Submit Existing Submissions (2015-2019)</li>
+        <ul class="data">
+          <li> United States = 4,488,000 </li>
+          <li> European Union = 184,253 </li>
+        </ul>
+      <li> Total Submit New Submissions (2015-2019) </li>
+        <ul class="data">
+          <li> United States = 15,717,968 </li>
+          <li> European Union = 759,551 </li>
+        </ul>
+    </ul> -->
+
+    <!-- <p> Using these numbers I could calculate the percentage of all submissions that used "Submit Existing." </p> -->
+
+    <p class="percentages"> 22.01%  (US) &nbsp &nbsp 19.52%  (EU)  </p>
+
+    <p>   </p>
+    <p> </p>
+
+
+    <h4> 2. "What is the total number of duplicate workforce records that are created?" </h4>
+
+    <p class="percentages">  4,214,435 (US)  &nbsp &nbsp  201,545 (EU)    </p>
+
+    <h3> Qualitative Data </h3>
+
+    <h4> 1. "How many suppliers understand the difference between the meaning of "Submit New" and "Submit Existing" actions? </h4>
+
+    <p> A member of the Professional Services (PS) had valuable feedback that helped answer why "Submit Existing" was not being used.  </p>
+
+    <p class="psquote"> "Most suppliers are actually clear in their understanding of both actions, but it's faster to submit all candidates using "Submit New" because the search is too difficult." -Sreymoun (Professional Services) </p>
+
+    <p> It turns out, suppliers do understand the difference between the actions, but they just find searching for existing candidates (pictured below) too difficult.  </p>
+
+    <img src="../Images/submitx/search.png">
+
+    <h3> Keep Digging </h3>
+
+    <p> After hearing that searching for existing workers was too difficult, I created more questions focused on the search process. I used UserZoom to conduct user interviews hear what real suppliers had to say.  </p>
+
+
+    <p> The question that proved most valuable was, "If you could change any one thing regarding your entire process of submitting job seekers to job postings, what would it be? (i.e. if you had a magic wand, what's the one change/addition/removal you’d like to see supported by SAP Fieldglass?)"  </p>
+
+    <p class="psquote"> "We frequently get a warning after entering a new candidate that a match already exists. However, there is no way to tell why that happens and there is no "view matching candidates..." </p>
+
+    <p> This feedback from a suppliers suggested that the functionality that detects when potential matches are being entered in the system is able to identify matches, but only allows you to view them. There is no way to select and submit the potential match instead of the new candidate. </p>
+
+    <img class="test" src="../Images/submitx/potentialmatch1.png">
+    <img src="../Images/submitx/potentialmatch2.png">
+
+
+    <p> Discovering this issue was key because it meant that the number of duplicate workforce records could be reduced by adding in some way to submit the matches that were discovered. </p>
+
+
+
+
 <!-- Footer -->
+
+
+
 
     <p class="footer"> &copy Luke Soenen this will be the website footer </p>
 

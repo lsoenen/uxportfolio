@@ -117,6 +117,18 @@ a:visited {
   margin-left: 16px;
 }
 
+/* .backbutton {
+    margin-top: 64px;
+    color: white;
+    font-weight: lighter;
+    background-color: #41413d;
+    padding: 8px 36px;
+    width: 183px;
+    height: 48px;
+    text-decoration: none;
+    margin-left: 16px;
+  } */
+
 .button:hover {
   background-color: #56A292;
   color: #FFFFFF;
@@ -153,6 +165,7 @@ a:visited {
   list-style-type: circle;
   margin-left: 32px;
   color: #d4d4d4;
+  font-weight: lighter;
 }
 
 .bestpractice {
@@ -174,6 +187,27 @@ a:visited {
   margin: auto;
 }
 
+.data {
+  list-style-type: circle;
+  color: #d4d4d4;
+  margin-left: 16px;
+  font-weight: lighter;
+}
+
+
+.percentages {
+  font-size: 24px;
+  margin-top: 12px;
+  /* margin-bottom: 24px; */
+}
+
+.psquote {
+  font-style: italic;
+  border-left: 2px solid;
+  border-color: #56A292;
+  padding: 12px;
+}
+
 
 @media screen and (min-width: 700px) {
 
@@ -188,5 +222,21 @@ a:visited {
     margin-right: auto;
     margin-top:48px;
     margin-bottom: 64px;
+  }
+
+  .mobile {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+  }
+
+  .desktop {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .avatarpic {
+    width: 75%;
   }
 }
