@@ -5,17 +5,20 @@ body {
 
 h1 {
   color: #DF744A;
-  font-size: 32px;
-  margin-top: 48px;
-  margin-left: 16px;
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  /* width: 50%; */
+
 }
 
 h2 {
   color: #D4D4D4;
   font-weight: normal;
   font-size: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-top: 0px;
+  margin-bottom: 36px;
+  /* width: 50%; */
 }
 
 h3 {
@@ -54,7 +57,7 @@ ul {
   padding: 0;
 }
 
-img {
+/* img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -63,6 +66,19 @@ img {
   margin-top: 32px;
   margin-bottom: 32px;
   margin-right: 16px;
+} */
+
+.main-content {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+#avatar-pic {
+  top:15%;
+  width: 60%;
+  right: 0px;
+  position: absolute;
+  /* float: right; */
 }
 
 a {
@@ -72,6 +88,34 @@ a {
 a:visited {
   color: #56A292;
 }
+
+.topnav {
+  margin-bottom: 48px;
+}
+
+/* .more-information {
+  margin-bottom: 24px;
+} */
+
+.more-information ul {
+  width: 60%;
+  position: absolute;
+}
+
+.more-information li {
+  width: 25%;
+  display: block;
+  float: left;
+  padding: 4px;
+}
+.more-information li a {
+  display: block;
+  text-align: center;
+  background-color: #41413d;
+  padding: 16px;
+}
+
+#avatar
 
 .project {
   margin: 24px 0px;
@@ -106,16 +150,6 @@ a:visited {
   font-weight: bold;
 }
 
-.button {
-  color: white;
-  font-weight: lighter;
-  background-color: #41413d;
-  padding: 8px 36px;
-  width: 183px;
-  height: 48px;
-  text-decoration: none;
-  margin-left: 16px;
-}
 
 /* .backbutton {
     margin-top: 64px;
@@ -183,9 +217,10 @@ a:visited {
   margin-top: 4px;
 }
 
-.avatarpic {
+/* .avatarpic {
   margin: auto;
-}
+  float: right;
+} */
 
 .data {
   list-style-type: circle;
@@ -209,20 +244,31 @@ a:visited {
 }
 
 
+
 @media screen and (min-width: 700px) {
 
-  body {
+  /* body {
     margin-left: 325px;
     margin-right: 325px;
+  } */
+
+  h1 {
+    font-size: 48px;
+    /* width: 50%; */
   }
 
-  img {
+  h2 {
+    font-size: 20px;
+  }
+
+  /* img {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top:48px;
     margin-bottom: 64px;
-  }
+  } */
+
 
   .mobile {
     width: 50%;
@@ -236,7 +282,9 @@ a:visited {
     margin-right: auto;
   }
 
-  .avatarpic {
-    width: 75%;
-  }
+
+  /* .avatarpic {
+    width: 50%;
+    display: block;
+  } */
 }
