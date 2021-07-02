@@ -69,8 +69,10 @@ ul {
 } */
 
 .main-content {
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 a {
@@ -301,6 +303,12 @@ a:visited {
     padding: 16px;
   }
 
+  .main-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
 
   /* .avatarpic {
     width: 50%;
