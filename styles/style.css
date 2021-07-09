@@ -68,6 +68,11 @@ ul {
   margin-right: 16px;
 } */
 
+.topnav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-content {
   margin-left: auto;
   margin-right: auto;
@@ -239,6 +244,12 @@ a:visited {
   /* float: right; */
 }
 
+#aboutmepic {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media screen and (min-width: 700px) {
 
@@ -285,6 +296,13 @@ a:visited {
     /* float: right; */
   }
 
+  #aboutmepic {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .more-information ul {
     width: 60%;
     position: absolute;
@@ -308,6 +326,13 @@ a:visited {
     margin-right: auto;
     padding-left: 10em;
     padding-right: 10em;
+  }
+
+  .topnav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   /* .avatarpic {
