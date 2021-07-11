@@ -245,7 +245,7 @@ a:visited {
   top:60%;
   width: 100%;
   right: 0px;
-  position: absolute;
+  /* position: absolute; */
   /* float: right; */
 }
 
