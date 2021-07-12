@@ -337,6 +337,17 @@ a:visited {
     padding-bottom: 48px;
   }
 
+  .half {
+    display: flex;
+    margin: 0px;
+    /* width: 50%; */
+  }
+
+  .half img {
+    width: 50%;
+    padding: 24px;
+  }
+
   #avatar-pic {
     top:15%;
     width: 60%;
