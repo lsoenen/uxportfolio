@@ -8,6 +8,7 @@ h1 {
   font-size: 48px;
   margin-top: 0px;
   margin-bottom: 32px;
+  margin-top: 20px;
   /* width: 50%; */
 
 }
@@ -212,6 +213,32 @@ a:visited {
   margin-right: auto;
   margin-top: 64px;
   margin-bottom: 24px;
+}
+
+.lessons-learned {
+  font-size: 16px;
+  color: #D4D4D4;
+  font-weight: lighter;
+  padding-bottom: 16px;
+}
+
+.lesson-learned {
+  list-style-type: circle;
+  padding-left: 32px;
+  padding-bottom: 14px;
+}
+
+a.backbutton {
+  padding: 8px;
+  background-color: #41413d;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+a.backbutton:hover {
+  background-color: #56A292;
+  color: black;
 }
 
 #avatar-pic {
