@@ -372,15 +372,13 @@ a.backbutton:hover {
     color: black;
   }
 
-  .half {
+  .myassignments {
     display: flex;
-    margin: 0px;
-    /* width: 50%; */
   }
 
-  .half img {
-    width: 50%;
-    padding: 24px;
+  .myassignments img {
+    width: 30%;
+    padding: 16px;
   }
 
   .project-two {
@@ -398,6 +396,19 @@ a.backbutton:hover {
     list-style-type: circle;
     padding-left: 32px;
     padding-bottom: 14px;
+  }
+
+
+  .research {
+    list-style-type: circle;
+    color: #D4D4D4;
+    padding-left: 32px;
+    padding-top: 24px;
+  }
+
+  .research li {
+    margin-bottom: 4px;
+    font-weight: lighter;
   }
 
   #avatar-pic {
