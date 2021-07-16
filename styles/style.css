@@ -228,6 +228,27 @@ a:visited {
   padding-bottom: 14px;
 }
 
+.myassignments {
+  display: block;
+}
+
+.myassignments img {
+  width: 80%;
+  padding: 16px;
+}
+
+.research {
+  list-style-type: circle;
+  color: #D4D4D4;
+  padding-left: 32px;
+  padding-top: 24px;
+}
+
+.research li {
+  margin-bottom: 4px;
+  font-weight: lighter;
+}
+
 a.backbutton {
   padding: 8px;
   background-color: #41413d;
@@ -256,6 +277,9 @@ a.backbutton:hover {
   margin-right: auto;
 }
 
+#myprojectsheader {
+  margin-top: 8px;
+}
 
 @media screen and (min-width: 700px) {
 
@@ -415,7 +439,9 @@ a.backbutton:hover {
     font-weight: lighter;
   }
 
-
+  #myprojectsheader {
+    margin-top: 48px;
+  }
 
   #avatar-pic {
     top:15%;
