@@ -280,6 +280,10 @@ a.backbutton:hover {
     font-size: 18px;
   }
 
+  iframe {
+    margin-top: 32px;
+  }
+
   .mobile {
     width: 50%;
     margin-left: auto;
@@ -410,6 +414,8 @@ a.backbutton:hover {
     margin-bottom: 4px;
     font-weight: lighter;
   }
+
+
 
   #avatar-pic {
     top:15%;

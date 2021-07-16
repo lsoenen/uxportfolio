@@ -53,20 +53,56 @@
 
       <ul class=research>
         <li> With the rise of digital platforms freelance work is becoming more popular </li>
+        <li> Projects can often be short term </li>
         <li> Gig workers often have more flexible schedules and in some cases can set their own hours or work from home </li>
         <li> It is estimated that gig worker's size, which covers independent or non-conventional workers, is 20% to 30% of the economically active population in the United States and Europe. </li>
       </ul>
 
 
-      <p> However I still had some questions before starting the design </p>
+      <p> This information was helpful, but I still had some questions before jumping into the design. I reached out to the product manager who helped me brainstorm how we may handle certain use cases.</p>
 
-      <p> Questions:</p>
-        <ul class=research>
-          <li> What happens when an assignment is completed? (Most of these projects are short term…)</li>
-          <li> Is it important for workers to view their completed assignments or only assignments that are currently happening? </li>
-          <li> Why may a worker need to reference assignment details after they have completed the assignment? </li>
-          <li> What details about their assignments are most important for them to view? (Budget, spend, etc). </li>
-        </ul>
+      <ul class="research">
+        <li>  If projects are often short term...how will we handle completed projects?  </li>
+        <li> Do workers have a need to view their completed assignments?  </li>
+        <li> Of all the details related to different projects what are the three most important to workers? </li>
+      </ul>
+
+      <h3> Analysis </h3>
+      <p> In an attempt to better understand the information I found online and answer some of the questions I had come up with, I created a persona to better understand the wants, needs, and motivations of the users I would eventually be designing for. Understanding these things would help me make more effective design decisions.</p>
+
+      <img class="project-image" src="../Images/ftn/Persona.png">
+
+      <h3> Design </h3>
+
+
+
+      <p> With a more clear understanding of the motivations it was time to move into the actual design. </p>
+
+      <p> Because this was a responsive site… It would be important to focus on mobile first and only include the most necessary information. Based on the answer to my question above, the name period and ID </p>
+
+      <p> Also I had to figure out how to display a list of assignments and account for cases where a worker could have more than 50. </p>
+
+      <h4 class="bestpractice"> Sketches </h4>
+
+      <p> Design decision one - Separate active and completed assignments.
+      I decided to separate the active and completed assignments using tabs. In doing this, it prioritizes the active assignments (which workers care more about) while still allowing them to reference completed assignments if they need. </p>
+
+      <p> This could function similarly to email where you can access your archives but are more interested in the most recent messages.</p>
+
+      <img class="project-image" src="../Images/ftn/ftnsketch1.png">
+
+
+      <p> Design Decision 2 - Showing the active and completed assignments on the tile upfront. This shows the status of their work without forcing them to enter the workflow. </p>
+
+      <p> Design Decision 3 - Progressive disclosure. Only showing the most necessary information and allowing the user to view more if necessary. </p>
+
+      <p> Design decision 4 - scaling up to desktop. Using a table design could grow in width to allow more columns and information to be displayed depending on the size of the screen. Show/hide in HTML. </p>
+
+      <img class="project-image" src="../Images/ftn/desktopsketch1.png">
+
+      <h4 class="bestpractice"> Mockups </h4>
+
+      <p> Using Figma  I brought the ideas to life and created mockups which illustrated the fine details. Another design decision I made during the mockup creation was to show some sort of visual on the tile to see how many active and completed assignments the worker has. This would allow them to view their assignments without having to enter the workflow. </p>
 
       <figure class="myassignments">
         <img src="../Images/ftn/myassignments1.png">
@@ -75,6 +111,10 @@
       </figure>
 
       <img class="project-image" src="../Images/ftn/myassignmentsdesktop.png">
+
+      <h4 class="bestpractice"> Prototype </h4>
+
+      <p> Here you can view the interactive prototype. Click on the top right corner to enlarge the iframe. </p>
 
       <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMrllesyD0SBURwEQ9xoaro%2FFG-Talent-Network-(responsive-website)-FGL-82147%3Fnode-id%3D11124%253A23973%26scaling%3Dscale-down%26page-id%3D11124%253A23972%26starting-point-node-id%3D11124%253A23973" allowfullscreen></iframe>
 
