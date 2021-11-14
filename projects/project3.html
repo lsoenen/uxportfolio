@@ -30,7 +30,56 @@
 
 
 
-      <h1 class="project-title"> Submitting Job Seekers  </h1>
+      <h1 class="project-title"> Modifying UX and workflow to reduce duplicate data in an Enterprise-scale staffing application </h1>
+
+      <h3> Lessons Learned </h3>
+
+      <ol class="lessons-learned">
+        <li> Be creative when it comes to gathering data </li>
+          <ul class="lesson-learned">
+            <li>
+              Access to users and resources might not always be available so be scrappy when it comes to interviews and data
+            </li>
+            <li>
+              Even as little as five users answering interview questions can provide invaluable insight.
+            </li>
+          </ul>
+        <li> Never assume what the problem is </li>
+          <ul class="lesson-learned">
+            <li>
+              It is easy to assume what the issue is. However, talking to users and observing how they interact with the product can often lead to discovering where the real issues lie.
+            </li>
+          </ul>
+        <li> Propose big ideas and then scale them back if necessary </li>
+          <ul class="lesson-learned">
+            <li>
+              Ideas that you have are worth proposing even if you know they will be out of scope. Often it can lead to other ideas that are within scope.
+            </li>
+          </ul>
+        <li>  Be patient when your ideas cannot be implemented, and persevere by inventing multiple alternatives.
+            <ul class="lesson-learned">
+              <li>
+                it's important to remember that even great ideas sometimes can't get implemented when yoou have an install base as large as SAP's, which brings with it a long list of customer backlog requests."
+              </li>
+            </ul>
+        </li>
+          </ul>
+      </ol>
+
+      <h3> Designs </h3>
+
+      <h4 class="bestpractice"> Before </h4>
+      <img class=project-image src="../Images/submitx/before-1.png">
+      <img class=project-image src="../Images/submitx/before-2.png">
+      <img class=project-image src="../Images/submitx/before-3.png">
+
+      <h4 class="bestpractice"> After </h4>
+
+      <img class=project-image src="../Images/submitx/after-1.png">
+      <img class=project-image src="../Images/submitx/js-submit-panel-search.png">
+      <img class=project-image src="../Images/submitx/js-submit-panel-results.png">
+
+
 
       <h3> Background </h3>
 
@@ -51,14 +100,14 @@
 
       <p> To begin the process, I needed a better understanding of how submitting a job seeker to a job posting works. To do this I created user scenarios and mapped out the flow. This helped me understand why a supplier arrives at the page and also the different steps that can be taken once they are there. </p>
 
-      <img class="project-image" src="../Images/submitx/scenarios.png"/>
+      <!-- <img class="project-image" src="../Images/submitx/scenarios.png"/> -->
 
       <img class="project-image" src="../Images/submitx/flow-chart.png"/>
 
 
       <h4 class="bestpractice"> Asking the Right Questions </h4>
 
-      <p> With a more clear picture of how the submission process worked, I was still unclear as to why suppliers were not using the "Submit Existing" button. To me, the two options and their purpose seemed very clear, but I am not the user. So to try and put myself into their shoes, I started formulating a list of questions that would help provide insight and identify the underlying issue.   </p>
+      <p> With a clear understanding of the submission process, I still did not know why suppliers were not using the "Submit Existing" button. To me, the two options and their purpose seemed very clear, but I am not the user. So to try and put myself into their shoes, I started formulating a list of questions that would help provide insight and identify the underlying issue.   </p>
 
       <p> One strategy I find helpful when it comes to formulating good questions and putting together a story is the <a href="https://comm.gatech.edu/resources/writers/5ws" target="blank"> Five W's Method. </a> </p>
 
@@ -75,7 +124,7 @@
 
       <h4 class="bestpractice"> Data Driven Decision Making </h4>
 
-      <p> A senior designer on my team, Michael Nguyen, showed my how to create tickets in Jira for the database mining team (DBM). This allowed me to find answers to my questions. Here is what we found: </p>
+      <p> To find answers to these questions, I reached out to the Data Mining Team (DBM). Here is what we found: </p>
 
       <h4> 1. "What percent of all job seeker submissions used "Submit Existing?" </h4>
 
@@ -110,7 +159,7 @@
 
       <h4> 1. "How many suppliers understand the difference between the meaning of "Submit New" and "Submit Existing" actions? </h4>
 
-      <p> This question was not one that the DBM team could answer, so I reached out to the Professional Services (PS) team to set up a call. This call provided valuable feedback that helped answer why "Submit Existing" was not being used.  </p>
+      <p> This question was not one that the DBM team could answer, so I reached out to the Professional Services (PS) team.  </p>
 
       <p class="psquote"> "Most suppliers are actually clear in their understanding of both actions, but it's faster to submit all candidates using 'Submit New' because the 'Submit Existing' search is too difficult." -Sreymoun (Professional Services) </p>
 
@@ -168,11 +217,11 @@
 
       <h3> Ideation </h3>
 
-      <p> After carrying out the research I had a much better understanding of the current process and the frustrations users face. Now, it was time to start thinking of how to solve the problems. Here     </p>
+      <p> After carrying out the research I had a much better understanding of the current process and the frustrations users face. Now, it was time to start thinking of how to solve the problems.      </p>
 
       <h4 class="bestpractice"> Sketching </h4>
 
-      <p> My first ideas was to fix the potential matches modal. Instead of just identifying a problem, it was important to provide a solution. Giving the users some kind of way to submit the candidate rather than just view the match. This change alone could significantly reduce the number of duplicates in the system.  </p>
+      <p> My first idea was to fix the potential matches modal. Instead of just identifying a problem, it was important to provide a solution. Giving the users some kind of way to submit the candidate rather than just view the match. This change alone could significantly reduce the number of duplicates in the system.  </p>
 
       <img class="project-image" src="../Images/submitx/sketch2.png">
 
@@ -185,61 +234,54 @@
 
       <p> I presented these ideas to the larger team and although they were well perceived was too big of an effort from a development perspective. We would not be able to make changes to the search functionality or the potential matches modal. </p>
 
-      <p>  Back to the drawing board...I had to find a way to increase the use of the search function without making changes to it.  </p>
+      <p>  Back to the drawing board...I had to find a way to increase the use of the search function without making changes to it. I figured one way to do this would be to combine the two paths "Submit New" or "Submit Existing" to just one single flow.   </p>
 
-      <p>  I figured that maybe we could combine the two paths "Submit New" or "Submit Existing" to just one "Submit Candidate" or "Submit Job Seeker"   </p>
+      <figure class="flyout-sketches">
+        <img src="../Images/submitx/flyout-idea-1.jpg">
+        <img src="../Images/submitx/flyout-idea-2.jpg">
+        <img src="../Images/submitx/flyout-idea-3.jpg">
+      </figure>
 
-      <img class="project-image" src="../Images/submitx/sketch4.png">
+      <!-- <img class="project-image" src="../Images/submitx/sketch4.png"> -->
       <!-- <img class="project-image" src="../Images/submitx/sketch3.png"> -->
 
       <h4 class="bestpractice"> Mockups </h4>
 
-      <p> Theis idea was more feasible from a development perspective so I was encouraged to start building mockups based on the sketches. </p>
+      <p> This idea was more feasible from a development perspective so I was encouraged to start building mockups based on the sketches. </p>
 
-      <p> Here you can see the condensed flow into one single "Submit Job Seeker" button </p>
+      <!-- <p> Here you can see the condensed flow into one single "Submit Job Seeker" button </p>
 
-      <img class="project-image" src="../Images/submitx/submit-js-base.png">
+      <img class="project-image" src="../Images/submitx/submit-js-base.png"> -->
 
       <br>
       <br>
 
-      <p> Here is the side by side tab display. Having the search in close proximity makes it easier for the user to attempt a search for existing candidates while still having the option to submit new there. This eliminates the need to exit an entire workflow if they want to just try searching. </p>
+      <p> A few other touches to improve the UI: <br> • Progress bar at top to show submission status <br> • Description below each option to explain each step  <br> • Branded moment to show show that results are displayed after searching </p>
 
-      <p> A few other touches to improve the UI: <br> • Progress bar at top to show submission status <br> • Description below each option to explain each path  <br> • Branded moment to show show that results are displayed after searching </p>
+      <br>
+      <br>
 
-      <img class="project-image" src="../Images/submitx/submit-js-tabs-2.png">
+      <!-- <img class="project-image" src="../Images/submitx/submit-js-tabs-2.png"> -->
+      <video controls autoplay muted loop> <source src="../videos/submit-existing-1.mp4" type="video/mp4"> </video>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <video controls autoplay muted loop> <source src="../videos/submit-job-seeker-cropped.mp4" type="video/mp4"> </video>
 
       <h3> Presentation </h3>
+
+
 
       <p> After presenting my findings and proposed solution to the leadership team they liked the direction and and the project is set to be taken on for our next release cycle.  </p>
 
 
 
-      <h3> Lessons Learned </h3>
-
-      <ol class="lessons-learned">
-        <li> Be creative when it comes to gathering data </li>
-          <ul class="lesson-learned">
-            <li>
-              Access to users and resources might not always be available so be scrappy when it comes to interviews and data
-            </li>
-            <li>
-              Even as little as five users answering interview questions can provide invaluable insight.
-            </li>
-          </ul>
-        <li> Never assume what the problem is </li>
-          <ul class="lesson-learned">
-            <li>
-              It is easy to assume what the issue is. However, talking to users and observing how they interact with the product can often lead to discovering where the real issues lie.
-            </li>
-          </ul>
-        <li> Propose big ideas and then scale them back if necessary </li>
-          <ul class="lesson-learned">
-            <li>
-              Ideas that you have are worth proposing even if you know they will be out of scope. Often it can lead to other ideas that are within scope.
-            </li>
-          </ul>
-      </ol>
 
 
     </div>

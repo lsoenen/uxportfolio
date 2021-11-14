@@ -1,6 +1,6 @@
 body {
   background-color: #222222;
-  font-family: "Proxima Nova", serif;
+  font-family: "proxima-nova", serif;
 }
 
 h1 {
@@ -254,6 +254,19 @@ a:visited {
   font-weight: lighter;
 }
 
+.beforeafter{
+  display: block;
+}
+
+.beforeafter img {
+  width: 10 %;
+  padding: 16px;
+}
+
+.flyoutsketches {
+  display: flex;
+}
+
 a.backbutton {
   padding: 8px;
   background-color: #41413d;
@@ -307,11 +320,15 @@ a.backbutton:hover {
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   iframe {
     margin-top: 32px;
+  }
+
+  video {
+    width: 100%;
   }
 
   .mobile {
@@ -411,10 +428,18 @@ a.backbutton:hover {
   }
 
   .myassignments img {
-    width: 30%;
+    width: 60%;
     padding: 16px;
   }
 
+  .flyout-sketches {
+    display: flex;
+  }
+
+  .flyout-sketches img{
+    width: 30%;
+    padding: 16px;
+  }
   .project-two {
     font-size: 18px;
   }
