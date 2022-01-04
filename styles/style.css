@@ -33,8 +33,7 @@ h3 {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 48px;
-  font-family: "Oswald", "Galvji";
-  /* font-family: "Open Sans"; */
+  font-family: "Oswald", "Open Sans";
   text-transform: uppercase;
 }
 
@@ -298,7 +297,7 @@ a:visited {
 .hero-shot-title {
   color: #FFFFFF;
   font-size: 34px;
-  font-family: "Oswald";
+  font-family: "Oswald", "Open Sans";
   font-weight: normal;
   text-align: center;
   margin-bottom:8px;
