@@ -1,11 +1,11 @@
 body {
   background-color: #222222;
-  font-family: "proxima-nova", serif;
+  font-family: "Open Sans", serif;
 }
 
 h1 {
   color: #DF744A;
-  font-size: 48px;
+  font-size: 36px;
   margin-top: 0px;
   margin-bottom: 32px;
   margin-top: 20px;
@@ -17,7 +17,7 @@ h1 {
 h2 {
   color: #D4D4D4;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 0px;
   margin-bottom: 36px;
   font-family: "Galvji";
@@ -26,11 +26,16 @@ h2 {
 
 h3 {
   color: #FEDD89;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: normal;
+  /* text-align: center; */
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 48px;
-  font-family: "Galvji";
+  font-family: "Oswald", "Galvji";
+  /* font-family: "Open Sans"; */
+  text-transform: uppercase;
 }
 
 
@@ -51,9 +56,9 @@ p {
   margin-left: 16px;
   margin-right: 16px;
   font-size: 17px;
-  line-height: 27px;
+  line-height: 32px;
   /* line-height: 165%; */
-  margin-top: 24px;
+  margin-top: 8px;
 }
 
 ul {
@@ -126,6 +131,8 @@ a:visited {
   margin: 0px 12px;
   text-decoration: none;
   font-size: 16px;
+  font-family: "Oswald";
+  font-weight: normal;
 }
 
 .topnav a:hover {
@@ -216,7 +223,7 @@ a:visited {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 64px;
+  margin-top: 20px;
   margin-bottom: 24px;
 }
 
@@ -224,7 +231,9 @@ a:visited {
   font-size: 16px;
   color: #D4D4D4;
   font-weight: lighter;
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .lesson-learned {
@@ -267,6 +276,49 @@ a:visited {
   display: flex;
 }
 
+.banners {
+  width:100%;
+}
+
+.hero-shot {
+  margin-top: 112px;
+  margin-bottom: 112px;
+}
+
+.hero-shot-image {
+  width:100%;
+  /* margin-top: 72px; */
+}
+
+.hero-shot-text {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.hero-shot-title {
+  color: #FFFFFF;
+  font-size: 34px;
+  font-family: "Oswald";
+  font-weight: normal;
+  text-align: center;
+  margin-bottom:8px;
+}
+
+.hero-shot-description {
+  text-align: center;
+}
+
+
+.suggestions {
+  color: #d4d4d4;
+  font-weight: lighter;
+  list-style-type: circle;
+  margin-left: 32px;
+  line-height: 32px;
+}
+
+
+
 /* .demo  {
       width: 100%;
       display: block;
@@ -275,6 +327,49 @@ a:visited {
       margin-top: 64px;
       margin-bottom: 24px;
 } */
+
+
+
+.lessons-learned {
+  /* margin: 64px; */
+  /* margin-bottom: 112px; */
+}
+
+.lesson-icon {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 36px;
+  margin-top: 36px;
+}
+
+.section-label {
+  color: #DF744A;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p.lesson-title {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  font-family: "Galvji";
+  font-weight: Bold;
+  color: white;
+  text-align: center;
+}
+
+p.lesson-body-text {
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Open Sans";
+  text-align: center;
+  margin-bottom: 24px;
+}
+
 
 a.backbutton {
   padding: 8px;
@@ -309,7 +404,7 @@ a.backbutton:hover {
   margin-top: 8px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
 
   h1 {
     font-size: 48px;
@@ -321,7 +416,8 @@ a.backbutton:hover {
 
   h3 {
     font-size: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
+    margin-top: 48px;
   }
 
   h4 {
@@ -329,7 +425,9 @@ a.backbutton:hover {
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom:24px;
   }
 
   iframe {
@@ -339,6 +437,7 @@ a.backbutton:hover {
   video {
     width: 100%;
   }
+
 
   .mobile {
     width: 50%;
@@ -373,8 +472,8 @@ a.backbutton:hover {
   .main-content {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15em;
-    padding-right: 15em;
+    padding-left: 21em;
+    padding-right: 21em;
   }
 
   .topnav {
@@ -420,6 +519,16 @@ a.backbutton:hover {
     font-size: 20px;
   }
 
+  /* .lessons {
+    display: flex;
+  } */
+
+  .section-label {
+    font-size: 34px;
+    }
+
+
+
   a.backbutton {
     padding: 16px;
     background-color: #41413d;
@@ -453,14 +562,16 @@ a.backbutton:hover {
     font-size: 18px;
   }
 
-  .lessons-learned {
+  /* .lessons-learned {
     font-size: 18px;
     color: #D4D4D4;
     font-weight: lighter;
     padding-bottom: 16px;
-  }
+  } */
 
-  .lesson-learned {
+
+
+  .lessons-learned {
     list-style-type: circle;
     padding-left: 32px;
     padding-bottom: 14px;
@@ -477,6 +588,32 @@ a.backbutton:hover {
   .research li {
     margin-bottom: 4px;
     font-weight: lighter;
+  }
+
+  .banners {
+    width:100%;
+  }
+
+  .suggestions {
+    color: #d4d4d4;
+    font-weight: lighter;
+    list-style-type: circle;
+    font-size: 18px;
+    margin-left: 32px;
+    line-height: 32px;
+  }
+
+  .hero-shot-title {
+    font-size: 40px;
+  }
+
+  div.hero-shot {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  p.lesson-body-text {
+    font-size: 18px;
   }
 
   #myprojectsheader {
