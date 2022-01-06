@@ -467,6 +467,15 @@ a.backbutton:hover {
   margin-bottom: 4px;
 }
 
+#myprojectsheader {
+  /* margin-top: 48px; */
+  color: #D09A6A;
+  font-weight: normal;
+  font-size: 20px;
+  /* opacity: .9; */
+}
+
+
 @media screen and (min-width: 900px) {
 
   h1 {
