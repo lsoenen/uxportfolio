@@ -360,7 +360,7 @@ a:visited {
 }
 
 .project-code {
-  margin-left: 32px;
+  margin-left: 16px;
   margin-top: 12px;
   font-size: 32px;
 }
@@ -573,6 +573,12 @@ a.backbutton:hover {
     margin-right: auto;
     margin-top: 64px;
     margin-bottom: 24px;
+  }
+
+  .project-code {
+    margin-left: 32px;
+    margin-top: 12px;
+    font-size: 32px;
   }
 
   .footer {
