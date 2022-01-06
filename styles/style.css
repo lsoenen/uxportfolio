@@ -9,7 +9,7 @@ h1 {
   margin-top: 0px;
   margin-bottom: 32px;
   margin-top: 20px;
-  font-family: "Galvji";
+  font-family: "Open Sans", sans-serif;
   /* width: 50%; */
 
 }
@@ -20,7 +20,7 @@ h2 {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 36px;
-  font-family: "Galvji";
+  font-family: "Open Sans", sans-serif;
   /* width: 50%; */
 }
 
@@ -33,7 +33,7 @@ h3 {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 48px;
-  font-family: "Oswald", "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -45,7 +45,7 @@ h4 {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 32px;
-  font-family: "Galvji";
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -130,7 +130,7 @@ a:visited {
   margin: 0px 12px;
   text-decoration: none;
   font-size: 16px;
-  font-family: "Oswald";
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
 }
 
@@ -297,7 +297,7 @@ a:visited {
 .hero-shot-title {
   color: #FFFFFF;
   font-size: 34px;
-  font-family: "Oswald", "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
   margin-bottom:8px;
@@ -355,7 +355,7 @@ p.lesson-title {
   font-size: 20px;
   line-height: 36px;
   margin-bottom: 24px;
-  font-family: "Galvji";
+  font-family: "Open Sans", sans-serif;
   font-weight: Bold;
   color: white;
   text-align: center;
