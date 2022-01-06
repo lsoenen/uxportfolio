@@ -4,12 +4,13 @@ body {
 }
 
 h1 {
-  color: #DF744A;
+  color: #FFFFFF;
   font-size: 36px;
   margin-top: 0px;
   margin-bottom: 32px;
   margin-top: 20px;
   font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
   /* width: 50%; */
 
 }
@@ -25,9 +26,13 @@ h2 {
 }
 
 h3 {
-  color: #FEDD89;
-  font-size: 18px;
+  /* color: #FEDD89; */
+  color: #FFFFFF;
+  color: #56A292;
+  /* color: #56A292; */
   font-weight: normal;
+  font-size: 16px;
+  /* font-weight: normal; */
   /* text-align: center; */
   margin-left: 16px;
   margin-right: 16px;
@@ -47,7 +52,7 @@ h4 {
 }
 
 p {
-  color: #D4D4D4;
+  color: #d4d4d4;
   font-weight: lighter;
   margin: 0px;
   margin-left: 16px;
@@ -56,6 +61,7 @@ p {
   line-height: 32px;
   /* line-height: 165%; */
   margin-top: 8px;
+
 }
 
 ul {
@@ -77,7 +83,7 @@ ul {
 }
 
 a {
-  color: #D4D4D4;
+  color: #FFFFFF;
 }
 
 a:visited {
@@ -122,7 +128,7 @@ a:visited {
 .topnav a {
   float: right;
   display: block;
-  color: #FEDD89;
+  color: #a7a7a7;
   text-align: center;
   padding: 14px 8px;
   margin: 0px 12px;
@@ -133,11 +139,14 @@ a:visited {
 }
 
 .topnav a:hover {
-  background-color: #56A292;
+  background-color: #ffff00;
+  opacity: .3;
+  color: #000000;
 }
 
 .topnav a.active {
   border-bottom: 3px solid #56a292;
+  color: #FFFFFF;
   font-weight: bold;
 }
 
@@ -296,7 +305,7 @@ a:visited {
   color: #FFFFFF;
   font-size: 34px;
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   text-align: center;
   margin-bottom:8px;
 }
@@ -343,10 +352,53 @@ a:visited {
 }
 
 .section-label {
-  color: #DF744A;
+  color: #D09A6A;
+  opacity: .8;
   font-size: 24px;
-  text-align: center;
-  font-weight: bold;
+  /* text-align: center; */
+  font-weight: normal;
+}
+
+.project-code {
+  margin-left: 32px;
+  margin-top: 12px;
+  font-size: 32px;
+}
+.first-class, .second-class, .third-class {
+  display: inline;
+  font-size: 20px;
+  margin: none;
+  color: #d4d4d4;
+  margin-left: 32px;
+
+}
+
+.first-class {
+  margin: 0px;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+.second-class {
+  color: #56A292;
+  margin: 0px;
+  font-weight: normal;
+}
+
+.third-class{
+  margin: 0px;
+  font-weight: normal;
+}
+
+a.project-linking {
+  color: #56A292;
+}
+
+a.project-linking:hover {
+  background-color: #ffff00;
+  opacity: .3;
+  color: #000000;
+  /* background-color: #DE5356;
+  color: #FFFFFF; */
 }
 
 p.lesson-title {
@@ -358,6 +410,7 @@ p.lesson-title {
   color: white;
   text-align: center;
 }
+
 
 p.lesson-body-text {
   font-size: 16px;
@@ -390,6 +443,13 @@ a.backbutton:hover {
   /* float: right; */
 }
 
+#tagline {
+  color: #a7a7a7;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+
 #aboutmepic {
   width: 50%;
   display: block;
@@ -399,6 +459,12 @@ a.backbutton:hover {
 
 #myprojectsheader {
   margin-top: 8px;
+  margin-left: 0px;
+  margin-bottom: 4px;
+}
+
+#fullname {
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 900px) {
@@ -412,9 +478,10 @@ a.backbutton:hover {
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 24px;
     margin-top: 48px;
+    font-weight: normal;
   }
 
   h4 {
@@ -422,7 +489,7 @@ a.backbutton:hover {
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
     margin-bottom:24px;
   }
@@ -614,7 +681,10 @@ a.backbutton:hover {
   }
 
   #myprojectsheader {
-    margin-top: 48px;
+    /* margin-top: 48px; */
+    color: #D09A6A;
+    font-weight: normal;
+    /* opacity: .9; */
   }
 
   #avatar-pic {
@@ -633,4 +703,24 @@ a.backbutton:hover {
 
   #ftnteam {
     padding-bottom: 32px;
+  }
+
+
+  @media screen and (min-width: 1536px) {
+
+    p {
+      font-size: 20px;
+    }
+
+    a {
+      font-size: 20px;
+    }
+
+    .main-content {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 36em;
+      padding-right: 36em;
+    }
+
   }
